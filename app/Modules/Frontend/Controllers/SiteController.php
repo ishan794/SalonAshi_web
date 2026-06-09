@@ -38,7 +38,14 @@ class SiteController extends BaseController
     public function services()
     {
         $categories = (new ServiceCategoryModel())->where('is_active', 1)->orderBy('sort_order')->findAll();
-        $services   = (new ServiceModel())->where('is_active', 1)->orderBy('name')->findAll();
+        $query = (new ServiceModel())->where('is_active', 1);
+        
+        $q = $this->request->getGet('q');
+        if (!empty($q)) {
+            $query->like('name', $q);
+        }
+        $services = $query->orderBy('name')->findAll();
+        
         $byCategory = [];
         foreach ($services as $svc) $byCategory[(int) $svc['category_id']][] = $svc;
 

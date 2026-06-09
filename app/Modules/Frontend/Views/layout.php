@@ -91,6 +91,34 @@ $seoTwitterHandle = trim((string) $s->get('seo_twitter_handle'));
       // Force dark mode always for Salon Ashi
       document.documentElement.classList.add('dark');
     </script>
+    
+    <!-- JSON-LD LocalBusiness SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "<?= esc($salonName) ?>",
+      "image": "<?= esc($logoUrl ?? base_url('uploads/hero_new.png')) ?>",
+      "@id": "<?= base_url() ?>",
+      "url": "<?= base_url() ?>",
+      "telephone": "<?= esc($phone) ?>",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "<?= esc($address) ?>",
+        "addressCountry": "LK"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ]
+    }
+    </script>
     <!-- Typography: Roboto for body, Oswald for headings (sharp masculine barbershop aesthetic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,6 +199,16 @@ $seoTwitterHandle = trim((string) $s->get('seo_twitter_handle'));
 
         <div class="hidden lg:flex lg:items-center lg:gap-x-3"
              x-data="{ langMenu:false }">
+             
+            <!-- Search Bar -->
+            <form action="<?= site_url('services') ?>" method="GET" class="relative mr-2 group">
+                <input type="text" name="q" placeholder="Search services..." 
+                       class="bg-zinc-900/50 border border-white/10 rounded-full py-1.5 pl-4 pr-10 text-sm text-gray-300 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 w-32 focus:w-48 transition-all duration-300 font-sans" 
+                       value="<?= esc(service('request')->getGet('q')) ?>">
+                <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-500 transition-colors" aria-label="Search">
+                    <i data-lucide="search" class="size-4"></i>
+                </button>
+            </form>
             <!-- Language switcher -->
             <?php if (count($enabledLangs) > 1): ?>
             <div class="relative" @click.outside="langMenu=false">
@@ -237,6 +275,18 @@ $seoTwitterHandle = trim((string) $s->get('seo_twitter_handle'));
                         <a href="<?= site_url('about') ?>" @click="mobile = false" class="block px-4 py-3 text-base font-semibold text-gray-200 hover:bg-white/5 transition border-l-2 <?= $page === 'about' ? 'border-brand-500 text-brand-400' : 'border-transparent' ?>">ABOUT</a>
                         <a href="<?= site_url('book') ?>" @click="mobile = false" class="block px-4 py-3 text-base font-semibold text-gray-200 hover:bg-white/5 transition border-l-2 <?= $page === 'book' ? 'border-brand-500 text-brand-400' : 'border-transparent' ?>">BOOK</a>
                         <a href="<?= site_url('portal') ?>" @click="mobile = false" class="block px-4 py-3 text-base font-semibold text-gray-200 hover:bg-white/5 transition border-l-2 <?= $page === 'portal' ? 'border-brand-500 text-brand-400' : 'border-transparent' ?>">PROFILE</a>
+
+                        <!-- Mobile Search -->
+                        <div class="px-4 py-3 mt-2">
+                            <form action="<?= site_url('services') ?>" method="GET" class="relative">
+                                <input type="text" name="q" placeholder="Search services..." 
+                                       class="w-full bg-zinc-900/50 border border-white/10 rounded-full py-2.5 pl-5 pr-10 text-sm text-gray-300 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all font-sans" 
+                                       value="<?= esc(service('request')->getGet('q')) ?>">
+                                <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-500 transition-colors" aria-label="Search">
+                                    <i data-lucide="search" class="size-4"></i>
+                                </button>
+                            </form>
+                        </div>
 
                         <?php if (count($enabledLangs) > 1): ?>
                         <div class="mt-6 pt-6 border-t border-white/5">
