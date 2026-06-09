@@ -17,10 +17,10 @@ extract($data);
     <img src="<?= base_url('uploads/tools-bg.jpg') ?>" alt="" class="absolute top-0 right-0 w-full h-full object-contain object-right opacity-5 grayscale invert mix-blend-screen pointer-events-none -z-10">
     
     <!-- Top Creative Scissors Watermark -->
-    <img src="<?= base_url('uploads/scissors-bg.jpg') ?>" alt="" class="absolute -top-32 -left-16 w-96 h-96 object-contain opacity-5 grayscale invert mix-blend-screen pointer-events-none -z-10 transform -rotate-45">
+    <img src="<?= base_url('uploads/scissors-bg.jpg') ?>" alt="" class="absolute -top-32 -left-32 sm:-top-48 sm:-left-48 w-[500px] h-[500px] lg:w-[800px] lg:h-[800px] object-contain opacity-10 grayscale invert mix-blend-screen pointer-events-none -z-10 transform -rotate-12 origin-center">
     
     <!-- Bottom Creative Scissors Watermark -->
-    <img src="<?= base_url('uploads/scissors-bg.jpg') ?>" alt="" class="absolute -bottom-32 -right-16 w-96 h-96 object-contain opacity-5 grayscale invert mix-blend-screen pointer-events-none -z-10 transform rotate-[135deg]">
+    <img src="<?= base_url('uploads/scissors-bg.jpg') ?>" alt="" class="absolute -bottom-32 -right-32 sm:-bottom-48 sm:-right-48 w-[500px] h-[500px] lg:w-[800px] lg:h-[800px] object-contain opacity-10 grayscale invert mix-blend-screen pointer-events-none -z-10 transform rotate-[160deg] origin-center">
     
     <div class="mx-auto max-w-5xl px-6 lg:px-8 space-y-16 relative z-10">
         <?php foreach ($categories as $cat): if (empty($byCategory[(int)$cat['id']])) continue; ?>
