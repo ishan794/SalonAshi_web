@@ -191,8 +191,8 @@ $email     = $s->get('biz_email');
             <div class="w-16 h-1 bg-brand-500 mx-auto mt-6"></div>
         </div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-0 border border-brand-500/20 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            <?php foreach (array_slice($staff, 0, 3) as $st): ?>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-brand-500/20 max-w-6xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            <?php foreach (array_slice($staff, 0, 4) as $st): ?>
                 <div class="group relative aspect-[3/4] overflow-hidden bg-zinc-800 border-b sm:border-b-0 sm:border-r border-brand-500/20 last:border-0 hover:border-brand-500 transition-colors grayscale hover:grayscale-0">
                     <div class="absolute inset-0 bg-zinc-900 flex items-center justify-center text-zinc-800">
                         <i data-lucide="user" class="size-24"></i>

@@ -186,42 +186,43 @@ class PagesController extends BaseController
             <span class="flex-1 h-px bg-brand-500/20"></span>
         </h2>
         <p class="text-white mb-8 text-lg font-light">The people behind your look.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="group bg-zinc-900/80 border border-brand-500/20 p-6 sm:p-8 hover:border-brand-500 transition-all duration-300 shadow-xl flex flex-col justify-between relative overflow-hidden">
                 <div class="relative z-10">
-                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">NP</div>
-                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">Nimal Perera</h4>
-                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Senior Stylist</p>
-                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Nimal brings over eight years of experience to every appointment. He's built a loyal following for his precision fades and relaxed, no-rush approach.</p>
-                </div>
-                <div class="mt-auto relative z-10 pt-4 border-t border-brand-500/10">
-                    <p class="text-xs text-brand-500 uppercase tracking-widest">Men's cuts &middot; Fades &middot; Scalp care</p>
+                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">A</div>
+                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">ashi by</h4>
+                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Owner</p>
+                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Ashi leads the salon with years of expertise, ensuring every client receives top-tier service and leaves with a smile.</p>
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
             
             <div class="group bg-zinc-900/80 border border-brand-500/20 p-6 sm:p-8 hover:border-brand-500 transition-all duration-300 shadow-xl flex flex-col justify-between relative overflow-hidden">
                 <div class="relative z-10">
-                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">RF</div>
-                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">Ravi Fernando</h4>
-                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Barber</p>
-                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Ravi has been cutting hair since his teens and turned his passion into a craft. He's the go-to for anyone who wants a proper barber experience.</p>
-                </div>
-                <div class="mt-auto relative z-10 pt-4 border-t border-brand-500/10">
-                    <p class="text-xs text-brand-500 uppercase tracking-widest">Beard shaping &middot; Hot towel shave</p>
+                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">M</div>
+                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">M.A.Shehan Rashmitha</h4>
+                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Stylist</p>
+                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Rash is our expert stylist, known for his precision cuts and modern styling techniques tailored to each individual.</p>
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
 
             <div class="group bg-zinc-900/80 border border-brand-500/20 p-6 sm:p-8 hover:border-brand-500 transition-all duration-300 shadow-xl flex flex-col justify-between relative overflow-hidden">
                 <div class="relative z-10">
-                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">SS</div>
-                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">Sanduni Silva</h4>
-                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Beautician</p>
-                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Sanduni specialises in beauty treatments that make you feel as good as you look. From a relaxing facial to a full bridal transformation.</p>
+                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">S</div>
+                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">Sadew</h4>
+                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Stylist</p>
+                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Sadew brings creativity and a relaxed vibe to every appointment. He is a versatile stylist for all hair types.</p>
                 </div>
-                <div class="mt-auto relative z-10 pt-4 border-t border-brand-500/10">
-                    <p class="text-xs text-brand-500 uppercase tracking-widest">Bridal makeup &middot; Facials &middot; Manicure</p>
+                <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            </div>
+
+            <div class="group bg-zinc-900/80 border border-brand-500/20 p-6 sm:p-8 hover:border-brand-500 transition-all duration-300 shadow-xl flex flex-col justify-between relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="size-16 bg-zinc-800 text-brand-500 flex items-center justify-center font-display text-2xl font-bold mb-6">W</div>
+                    <h4 class="text-xl font-bold font-display tracking-widest text-white group-hover:text-brand-400 uppercase mb-1 transition-colors">W.S.D.Sithumini (Hashi)</h4>
+                    <p class="text-sm font-display tracking-widest uppercase text-gray-500 mb-6">Main Hair desining(female)</p>
+                    <p class="text-base font-light text-gray-400 leading-relaxed mb-6">Hashi specializes in ladies hair designing, treatments, and beauty, offering a comprehensive and beautiful experience.</p>
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
@@ -238,19 +239,19 @@ class PagesController extends BaseController
             <div class="bg-zinc-900/80 border border-brand-500/20 p-6 sm:p-8 shadow-xl grid grid-cols-1 sm:grid-cols-2 gap-6 relative overflow-hidden">
                 <div>
                     <p class="text-brand-400 font-display tracking-widest uppercase text-sm mb-2">Address</p>
-                    <p class="text-base font-light text-gray-300 leading-relaxed">SalonAshi<br>[Street Address]<br>[City], Sri Lanka</p>
+                    <p class="text-base font-light text-gray-300 leading-relaxed">641 Govinna Road<br>Athurugiriya<br>Sri Lanka</p>
                 </div>
                 <div>
                     <p class="text-brand-400 font-display tracking-widest uppercase text-sm mb-2">Phone</p>
-                    <p class="text-base font-light text-gray-300">[+94 XX XXX XXXX]</p>
+                    <p class="text-base font-light text-gray-300">075 217 1225</p>
                 </div>
                 <div>
                     <p class="text-brand-400 font-display tracking-widest uppercase text-sm mb-2">WhatsApp</p>
-                    <p class="text-base font-light text-gray-300">[+94 XX XXX XXXX]</p>
+                    <p class="text-base font-light text-gray-300">075 217 1225</p>
                 </div>
                 <div class="break-all">
                     <p class="text-brand-400 font-display tracking-widest uppercase text-sm mb-2">Email</p>
-                    <p class="text-base font-light text-gray-300">[hello@salonashi.lk]</p>
+                    <p class="text-base font-light text-gray-300">info@salonashi.com</p>
                 </div>
             </div>
         </div>
@@ -262,12 +263,8 @@ class PagesController extends BaseController
             </h2>
             <div class="bg-zinc-900/80 border border-brand-500/20 p-6 sm:p-8 shadow-xl space-y-6 relative overflow-hidden">
                 <div class="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span class="text-brand-400 font-display tracking-widest uppercase text-sm">Monday - Friday</span>
+                    <span class="text-brand-400 font-display tracking-widest uppercase text-sm">Monday - Sunday</span>
                     <span class="text-base font-light text-gray-300">9:00 AM – 8:00 PM</span>
-                </div>
-                <div class="flex justify-between items-center">
-                    <span class="text-brand-400 font-display tracking-widest uppercase text-sm">Saturday - Sunday</span>
-                    <span class="text-base font-light text-gray-300">10:00 AM – 6:00 PM</span>
                 </div>
             </div>
         </div>
