@@ -13,8 +13,14 @@ extract($data);
 </section>
 
 <section class="py-16 bg-transparent relative isolate overflow-hidden">
-    <!-- Decorative Tools Watermark -->
+    <!-- Original Decorative Tools Watermark -->
     <img src="<?= base_url('uploads/tools-bg.jpg') ?>" alt="" class="absolute top-0 right-0 w-full h-full object-contain object-right opacity-5 grayscale invert mix-blend-screen pointer-events-none -z-10">
+    
+    <!-- Top Creative Scissors Watermark -->
+    <img src="<?= base_url('uploads/scissors-bg.jpg') ?>" alt="" class="absolute -top-32 -left-16 w-96 h-96 object-contain opacity-5 grayscale invert mix-blend-screen pointer-events-none -z-10 transform -rotate-45">
+    
+    <!-- Bottom Creative Scissors Watermark -->
+    <img src="<?= base_url('uploads/scissors-bg.jpg') ?>" alt="" class="absolute -bottom-32 -right-16 w-96 h-96 object-contain opacity-5 grayscale invert mix-blend-screen pointer-events-none -z-10 transform rotate-[135deg]">
     
     <div class="mx-auto max-w-5xl px-6 lg:px-8 space-y-16 relative z-10">
         <?php foreach ($categories as $cat): if (empty($byCategory[(int)$cat['id']])) continue; ?>
