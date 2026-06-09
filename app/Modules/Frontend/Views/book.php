@@ -5,7 +5,7 @@ $preselectId = (int) ($_GET['service_id'] ?? 0);
 ?>
 <section class="pt-28 pb-16 bg-transparent min-h-screen relative isolate overflow-hidden">
     <!-- Decorative Interior Watermark -->
-    <img src="<?= base_url('uploads/booking-bg.jpg') ?>" alt="" class="absolute inset-0 w-full h-full object-cover opacity-10 grayscale invert mix-blend-screen pointer-events-none -z-10">
+    <img src="<?= base_url('uploads/booking-bg.jpg') ?>" alt="" class="absolute inset-0 w-full h-full object-cover object-center opacity-10 grayscale invert mix-blend-screen pointer-events-none -z-10">
 
     <div class="mx-auto max-w-4xl px-6 lg:px-8 relative z-10">
 
